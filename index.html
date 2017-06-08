@@ -30,7 +30,7 @@
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+    <nav class="navbar navbar-inverse navbar-fixed-top topnav" role="navigation">
         <div class="container topnav">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -40,13 +40,13 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand topnav" href="#">Start Bootstrap</a>
+                <a class="navbar-brand topnav" href="#top">Yellow Boxfish Games</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="#about">About</a>
+                        <a href="#about">Our Team</a>
                     </li>
                     <li>
                         <a href="#services">Services</a>
@@ -63,31 +63,23 @@
 
 
     <!-- Header -->
-    <a name="about"></a>
+    <a name="top"></a>
     <div class="intro-header">
         <div class="container">
-
             <div class="row">
                 <div class="col-lg-12">
                     <div class="intro-message">
-                        <h1>Landing Page</h1>
-                        <h3>A Template by Start Bootstrap</h3>
+                        <h1>Morph</h1>
+                        <h3>A Puzzle Platformer Adventure</h3>
                         <hr class="intro-divider">
                         <ul class="list-inline intro-social-buttons">
-                            <li>
-                                <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
-                            </li>
+                            <li><a href="https://twitter.com/SBootstrap" class="btn btn-info btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a></li>
+                            <li><a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a></li>
+                            <li><a href="#" class="btn btn-warning btn-lg">Kickstarter Coming Soon!</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
-
         </div>
         <!-- /.container -->
 
@@ -96,22 +88,47 @@
 
     <!-- Page Content -->
 
-	<a  name="services"></a>
+	<a name="about"></a>
     <div class="content-section-a">
-
         <div class="container">
-            <div class="row">
-                <div class="col-lg-5 col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Death to the Stock Photo:<br>Special Thanks</h2>
-                    <p class="lead">A special thanks to <a target="_blank" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a> for providing the photographs that you see in this template. Visit their website to become a member.</p>
-                </div>
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="img/ipad.png" alt="">
-                </div>
-            </div>
+          <h1 style="text-align:center">Our Team</h1>
+          <div class="row destacados">
+          		<div class="col-md-3">
+              		<div>
+          				<img src="img/kara.jpg" alt="Texto Alternativo" class="img-circle img-thumbnail teamPhoto">
+          				<h2>Kara Straub</h2>
+          				<p>Project Lead and Art Director</p>
+          				<a href="#" class="btn btn-primary" title="Enlace">Leer más »</a>
+          			</div>
+          		</div>
 
+          		<div class="col-md-3">
+          			<div>
+          				<img src="img/kathryn.jpg" alt="Texto Alternativo" class="img-circle img-thumbnail teamPhoto">
+          				<h2>Kathryn DiPippo</h2>
+          				<p>Webmaster and Background Artist</p>
+          				<a href="#" class="btn btn-primary" title="Enlace">Leer más »</a>
+          			</div>
+          		</div>
+
+          		<div class="col-md-3">
+          			<div>
+          				<img src="http://lorempixel.com/200/200/abstract/3/" alt="Texto Alternativo" class="img-circle img-thumbnail teamPhoto">
+          				<h2>Darien Keyack</h2>
+          				<p>Programmer</p>
+          				<a href="#" class="btn btn-primary" title="Enlace">Leer más »</a>
+          			</div>
+          		</div>
+
+              <div class="col-md-3">
+          			<div>
+          				<img src="http://lorempixel.com/200/200/abstract/3/" alt="Texto Alternativo" class="img-circle img-thumbnail teamPhoto">
+          				<h2>Corwin Aucoin</h2>
+          				<p>Programmer</p>
+          				<a href="#" class="btn btn-primary" title="Enlace">Leer más »</a>
+          			</div>
+          		</div>
+          	</div>
         </div>
         <!-- /.container -->
 
@@ -214,18 +231,52 @@
                             <a href="#contact">Contact</a>
                         </li>
                     </ul>
-                    <p class="copyright text-muted small">Copyright &copy; Your Company 2014. All Rights Reserved</p>
+                    <p class="copyright text-muted small">Copyright &copy; Yellow Boxfish Games 2017. All Rights Reserved</p>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- jQuery -->
+    <!-- JavaScript libraries -->
     <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-
+    <script>
+    // Select all links with hashes
+    $('a[href*="#"]')
+      // Remove links that don't actually link to anything
+      .not('[href="#"]')
+      .not('[href="#0"]')
+      .click(function(event) {
+        // On-page links
+        if (
+          location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+          &&
+          location.hostname == this.hostname
+        ) {
+          // Figure out element to scroll to
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+          // Does a scroll target exist?
+          if (target.length) {
+            // Only prevent default if animation is actually gonna happen
+            event.preventDefault();
+            $('html, body').animate({
+              scrollTop: target.offset().top
+            }, 1000, function() {
+              // Callback after animation
+              // Must change focus!
+              var $target = $(target);
+              $target.focus();
+              if ($target.is(":focus")) { // Checking if the target was focused
+                return false;
+              } else {
+                $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+                $target.focus(); // Set focus again
+              };
+            });
+          }
+        }
+      });
+    </script>
 </body>
-
 </html>

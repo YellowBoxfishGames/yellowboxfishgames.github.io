@@ -8,6 +8,7 @@ body,
 html {
     width: 100%;
     height: 100%;
+    background-image: url("https://ih1.redbubble.net/image.93931922.1524/raf,750x1000,075,t,101010:01c5ca27c6.u1.jpg");
 }
 
 body,
@@ -22,7 +23,7 @@ h6 {
 }
 
 .topnav {
-    font-size: 14px; 
+    font-size: 14px;
 }
 
 .lead {
@@ -35,7 +36,7 @@ h6 {
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
-    background: url(../img/intro-bg.jpg) no-repeat center center;
+    background: url(../img/concept_cave.png) no-repeat center center;
     background-size: cover;
 }
 
@@ -167,4 +168,25 @@ footer {
 
 p.copyright {
     margin: 15px 0 0;
+}
+
+.destacados{
+    padding: 20px 0;
+	text-align: center;
+}
+.destacados > div > div{
+	padding: 10px;
+	border-radius: 4px;
+  background-color: #fff;
+	border: 1px solid rgb(200, 200, 200);
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 2px 2px;
+  transition: 0.5s;
+}
+.destacados > div:hover > div {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 5px 2px;
+  transition: 0.5s;
+}
+.teamphoto {
+  width: 200px;
+  height: 200px;
 }
